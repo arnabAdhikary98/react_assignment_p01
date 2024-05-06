@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+    
+  </head>
+  <body>
+
+
+    <div id="root"></div>
+
+
+  </body>
+    <!-- REACT Library -->
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <!-- REACT DOM Library -->
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <!-- Babel Library -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+
+    let rootEle = document.getElementById('root')
+        
+    // //creating a paragraph using React and React DOM library only
+    // let para = React.createElement('p', {id : 'paragraph'}, 'Seize the Day')
+
+    //creating a paragraph using BABEL library
+    let para = <p style={{color:"red", textAlign:"center", fontSize:"210%"}}>Seize the day</p>
+        
+    //showing/rendering it to the DOM using React
+    ReactDOM.createRoot(rootEle).render(para)
+    
+  </script>
+</html>
